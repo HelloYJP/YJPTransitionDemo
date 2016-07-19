@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell_id" id="72B-a4-JBc" customClass="MyCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Bc-Su-uGt">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="111"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2Bc-Su-uGt" secondAttribute="trailing" id="fME-RF-0AM"/>
+                <constraint firstAttribute="bottom" secondItem="2Bc-Su-uGt" secondAttribute="bottom" id="sFG-Ps-Cey"/>
+                <constraint firstItem="2Bc-Su-uGt" firstAttribute="leading" secondItem="72B-a4-JBc" secondAttribute="leading" id="uXX-Z6-gbH"/>
+                <constraint firstItem="2Bc-Su-uGt" firstAttribute="top" secondItem="72B-a4-JBc" secondAttribute="top" id="uY6-jN-n1T"/>
+            </constraints>
+            <size key="customSize" width="310" height="111"/>
+            <connections>
+                <outlet property="myImgView" destination="2Bc-Su-uGt" id="6ZA-LU-4jR"/>
+            </connections>
+            <point key="canvasLocation" x="387" y="294.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="star.jpg" width="540" height="480"/>
+    </resources>
+</document>
